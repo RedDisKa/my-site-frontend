@@ -1,0 +1,13 @@
+@import '../../_global.scss';
+
+.add_comment_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid $accent-gray;
+}

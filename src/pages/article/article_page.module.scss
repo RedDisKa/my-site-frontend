@@ -1,0 +1,23 @@
+@import '../../_global.scss';
+
+.margin_title {
+    margin-bottom: 8px;
+}
+
+.margin_subtitle {
+    margin: 16px 0 8px;
+}
+
+.article_info {
+    display: flex;
+    align-items: center;
+
+    & > * + * {
+        margin-top: 0;
+        margin-left: 16px;
+    }
+}
+
+.article_content {
+    @extend %body_regular;
+}

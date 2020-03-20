@@ -1,0 +1,30 @@
+@import '../../_global.scss';
+
+.blog_container {
+    display: flex;
+}
+
+.blog_menu {
+    position: sticky;
+    top: 90px;
+    width: 350px;
+    margin-left: 24px;
+    height: fit-content;
+}
+
+.tags_list_search {
+    @extend %title_regular;
+    color: $medium-gray;
+    margin: 16px 0;
+}
+
+@media screen and (max-width: 764px) {
+    .blog_container {
+        flex-direction: column-reverse;
+    }
+
+    .blog_menu {
+        width: 100%;
+        margin: 0;
+    }
+}

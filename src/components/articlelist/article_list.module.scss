@@ -1,0 +1,17 @@
+@import '../../_global.scss';
+@import '../../variables.scss';
+
+.articles_list {
+    width: 100%;
+}
+
+.article_title {
+    @extend %title_medium;
+    color: $blue;
+    margin: 16px 0 8px;
+}
+
+.article_preview {
+    @extend %body_regular;
+    color: $black;
+}

@@ -1,0 +1,49 @@
+@import '../../_global.scss';
+@import '../../_variables.scss';
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: $site-width;
+    display: flex;
+    align-content: center;
+    padding: 16px 0;
+    border-bottom: 1px solid $accent-gray;
+    background-color: white;
+    z-index: 999;
+
+    & > ul {
+        margin: 6px auto;
+
+        & > li {
+            display: inline;
+            margin: 0 16px;
+            color: $blue;
+        }
+    }
+
+    .spacer {
+        flex: 1;
+        padding: 0 16px;
+    }
+
+    .socials_container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .linkedin_icon {
+        @include icon($linkedin_icon, 24px, 24px);
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    .github_icon {
+        @include icon($github_icon, 24px, 24px);
+        margin-right: 8px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../_global.scss';
+
+.article_tags_title {
+    @extend %title_small;
+    color: $medium-gray;
+    margin: 16px 0;
+}
+
+.article_tag {
+    @extend %link;
+}

@@ -1,0 +1,41 @@
+@import './_variables.scss';
+
+body {
+    background: #eee;
+    color: $black;
+    font-size: $font-size-regular;
+    font-family: PlayfairDisplay;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+ul {
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+}
+
+.app {
+    max-width: $site-width;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.page {
+    max-width: $container-width-large;
+    padding: 90px 24px 24px;
+    margin: 0 auto;
+}
