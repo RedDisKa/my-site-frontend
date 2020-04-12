@@ -10,6 +10,12 @@
     overflow: hidden;
 }
 
+.card_container.hover {
+    & > div.project_info_container {
+        opacity: 1;
+    }
+}
+
 .project_image {
     position: absolute;
     width: 100%;
@@ -26,6 +32,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s;
 }
 
 .name {

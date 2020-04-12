@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import s from './project_card.module.scss'
+import classnames from 'classnames'
 
 export const ProjectCard = ({ project }) => {
     const [hover, setHover] = useState(false)
 
     return (
         <div
-            className={s.card_container}
+            className={classnames(s.card_container, hover && s.hover)}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
@@ -15,20 +16,18 @@ export const ProjectCard = ({ project }) => {
                 src={project.image}
                 alt={project.name}
             />
-            {hover && (
-                <div className={s.project_info_container}>
-                    <p className={s.name}>{project.name}</p>
-                    <a
-                        className={s.url}
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Go to project site
-                    </a>
-                    <p className={s.description}>{project.description}</p>
-                </div>
-            )}
+            <div className={s.project_info_container}>
+                <p className={s.name}>{project.name}</p>
+                <a
+                    className={s.url}
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Go to project site
+                </a>
+                <p className={s.description}>{project.description}</p>
+            </div>
         </div>
     )
 }

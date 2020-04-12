@@ -13,6 +13,8 @@
     background-color: white;
     z-index: 999;
 
+    transition: background-color 0.4s, border-color 0.4s;
+
     & > ul {
         margin: 6px auto;
 
@@ -20,6 +22,7 @@
             display: inline;
             margin: 0 16px;
             color: $blue;
+            transition: color 0.4s;
         }
     }
 
