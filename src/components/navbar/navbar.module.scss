@@ -47,3 +47,13 @@
         cursor: pointer;
     }
 }
+
+.navbar.scrolled {
+    background-color: $blue;
+    border-color: $blue;
+    & > ul {
+        & > li {
+            color: white;
+        }
+    }
+}
